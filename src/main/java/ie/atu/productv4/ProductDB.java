@@ -57,6 +57,25 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
         }
+
+        if (productCode.equalsIgnoreCase("pink")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Wish you were here");
+            myMusic.setArtist("Pink Floyd");
+            myMusic.setLabel("Columbia Records");
+            myMusic.setPrice(8.50);
+            p = myMusic;
+        }else if (productCode.equalsIgnoreCase("kesan")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Outspoken");
+            myMusic.setArtist("Kesan");
+            myMusic.setLabel("Independent");
+            myMusic.setPrice(8.50);
+            p = myMusic;
+        }
+
         return p;
     }
 }
