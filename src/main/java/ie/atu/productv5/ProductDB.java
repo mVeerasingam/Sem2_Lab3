@@ -9,7 +9,7 @@ public class ProductDB {
         // to return the correct product data
 
         Productable p = null;
-
+//bhjuhj
         if (productCode.equalsIgnoreCase("java"))
         {
            Book myBook = new Book();
