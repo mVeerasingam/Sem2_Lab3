@@ -1,6 +1,8 @@
 package ie.atu.productv5;
 
-public class Animal{
+import java.text.NumberFormat;
+
+public class Animal implements Productable{
 
     private String type;
     private String age;
@@ -44,6 +46,11 @@ public class Animal{
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getPriceFormatted(){
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        return currency.format(price);
     }
 
     @Override
