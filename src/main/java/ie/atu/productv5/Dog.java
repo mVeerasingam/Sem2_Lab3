@@ -1,9 +1,9 @@
 package ie.atu.productv5;
 
 public class Dog extends Animal{
-    private String vaccination;
+    private boolean vaccination;
     private String shedding;
-    private String  neutered;
+    private boolean  neutered;
 
     public Dog() {
         super();
@@ -12,11 +12,11 @@ public class Dog extends Animal{
         this.neutered = neutered;
     }
 
-    public String getVaccination() {
+    public boolean getVaccination() {
         return vaccination;
     }
 
-    public void setVaccination(String vaccination) {
+    public void setVaccination(boolean vaccination) {
         this.vaccination = vaccination;
     }
 
@@ -28,11 +28,11 @@ public class Dog extends Animal{
         this.shedding = shedding;
     }
 
-    public String getNeutered() {
+    public boolean getNeutered() {
         return neutered;
     }
 
-    public void setNeutered(String neutered) {
+    public void setNeutered(boolean neutered) {
         this.neutered = neutered;
     }
 

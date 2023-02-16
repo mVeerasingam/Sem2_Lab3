@@ -74,6 +74,19 @@ public class ProductDB {
             myMusic.setLabel("Independent");
             myMusic.setPrice(8.50);
             p = myMusic;
+        }else if(productCode.equalsIgnoreCase("ed")){
+            Horse myHorse = new Horse();
+            myHorse.setType(productCode);
+            myHorse.setPrice(700);
+            myHorse.setHeight(12);
+            myHorse.setAge("12");
+        }else if(productCode.equalsIgnoreCase("dog")){
+            Dog myDog = new Dog();
+            myDog.setType(productCode);
+            myDog.setPrice(50);
+            myDog.setAge("2");
+            myDog.setNeutered(true);
+            myDog.setVaccination(true);
         }
 
         return p;

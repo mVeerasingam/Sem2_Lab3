@@ -7,7 +7,7 @@ public class Animal implements Productable{
     private String type;
     private String age;
     private String breed;
-    private String price;
+    private double price;
 
     public Animal() {
         super();
@@ -40,11 +40,11 @@ public class Animal implements Productable{
         this.breed = breed;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

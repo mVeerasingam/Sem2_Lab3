@@ -4,7 +4,7 @@ public class Horse extends Animal{
 
     private String dam;
     private String sire;
-    private String height;
+    private double height;
 
     public Horse() {
         super();
@@ -29,11 +29,11 @@ public class Horse extends Animal{
         this.sire = sire;
     }
 
-    public String getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(String height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
